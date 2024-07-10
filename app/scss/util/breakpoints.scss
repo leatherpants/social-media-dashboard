@@ -1,0 +1,23 @@
+$breakpoints: (
+  // landscape phone
+  'small': '576px',
+  'landscape': '576px',
+
+  // tablets
+  'medium': '768px',
+  'tablet': '768px',
+
+  // laptops
+  'large': '992px',
+  'laptop': '992px'
+
+  // desktops
+  'xl': '1200px',
+  'xxl': '1400px',
+);
+
+@mixin screen-media-query($breakpoint) {
+  @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
