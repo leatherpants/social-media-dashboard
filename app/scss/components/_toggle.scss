@@ -4,16 +4,53 @@
 
   border: none;
 
-  &__wrapper {}
+  &__wrapper {
+    position: relative;
+  }
 
-  input[type="radio"] {}
+  input[type="radio"] {
+    width: rem(24);
+    height: rem(32);
+    margin: 0 rem(-2);
+    opacity: 0;
 
-  &__background {}
+    &:focus~.toggle__button {
+      border: 2px solid orange;
+    }
+  }
+
+  input[type="radio"]:first-child {
+    margin-left: 0;
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: rem(72);
+    height: rem(32);
+    background-color: black;
+    border-radius: rem(15);
+    opacity: 0.7;
+    pointer-events: none;
+  }
 
   &__button {
-    width: rem(16);
-    height: rem(16);
+    width: rem(22);
+    height: rem(22);
     border-radius: 50%;
-    background-color: var(--toggle);
+    background-color: aliceblue;
+    position: absolute;
+    transition: all 150ms ease-in-out;
+    top: rem(5);
+    left: rem(5);
+
+    #system:checked~& {
+      left: rem(25);
+    }
+
+    #dark:checked~& {
+      left: rem(45);
+    }
   }
 }
