@@ -20,7 +20,11 @@
 
   --dark-toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%)) --dark-bg: hsl(230, 17%, 14%);
   --dark-top-bg: hsl(232, 19%, 15%);
+  --dark-bg: hsl(228, 28%, 20%);
   --dark-card-bg: hsl(228, 28%, 20%);
   --dark-text1: hsl(228, 34%, 66%);
   --dark-text2: hsl(0, 0%, 100%);
+
+  --text-color: var(--light-text1);
+  --background: var(--light-bg);
 }

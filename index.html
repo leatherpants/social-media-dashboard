@@ -40,16 +40,14 @@
 
     <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
 
+      <label for="light" class="off-screen">Dark Mode Off</label>
+      <label for="dark">Dark Mode<span class="off-screen"> On</span></label>
       <div class="toggle__wrapper">
-        <input type="radio" name="theme" id="light">
-        <input type="radio" name="theme" id="system" checked>
-        <input type="radio" name="theme" id="dark">
+        <input type="radio" name="theme" id="light" class="toggle__radio">
+        <input type="radio" name="theme" id="dark" class="toggle__radio">
         <span class="toggle__background" aria-hidden="true"></span>
         <span class="toggle__switcher toggle__button" aria-hidden="true"></span>
       </div>
-      <label for="light">Light</label>
-      <label for="system">System Pref</label>
-      <label for="dark">Dark</label>
     </fieldset>
   </header>
   <main>

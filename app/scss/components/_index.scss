@@ -1,3 +1,23 @@
 @forward 'header';
 @forward 'toggle';
 @forward 'card';
+
+:root {
+  color: var(--text-color);
+  background: var(--background);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--dark-text1);
+    --background: var(--dark-bg);
+  }
+}
+
+.light {
+  color: var(--light-text1);
+  background: var(--light-bg);
+}
+
+.dark {
+  color: var(--dark-text1);
+  background: var(--dark-bg);
+}
